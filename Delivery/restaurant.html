@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiki</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link  rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="img\logo.svg" alt="logo" /></a>
+        <input type="text" class="input input-adress" placeholder="Adresse">
+        <div class="buttons">
+         <button class="button button-primery">
+             <img src="img/user.svg" alt="user" class="button-icon">
+             <span class="button-text">Einloggen</span>
+            </button>
+         <button class="button" id="cart-button">
+             <img src="img/shopping-cart.svg" alt="cart" class="button-icon">
+             <span class="button-text">Warenkorb</span>
+            </button>
+        </div>
+    </header>
+    </div>
+    <main class="main">
+        <div class="container">
+            <section class="restaurants">
+                <div class="section-heading">
+                    <h2 class="section-title">Shiki</h2>
+                    <div class="card-info">
+                        <div class="rating">
+                            <img src="img/star.svg" alt="star">
+                            4.4</div>
+                        <div class="price">von 9,99 €</div>
+                        <div class="category">Japanische</div>
+                        <div class="district">1010</div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="img/sushi-mix.jpg" alt="image1" class="card-image">
+                        <div class="card-text">
+                            <div class="card-heading">
+                                <h3 class="card-title-restaurant">Kleine Sushi Set 15 Stk.</h3>
+                            </div>
+                            <div class="card-info">
+                                <div class="ingredients">California Roll, Piladelfia Roll, Red Dragon Sushi, Unagi Maki Sushi, Soya Souce.</div>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="button button-primery">
+                                    <span class="button-card-text">In Warenkorb</span>
+                                    <img src="img/shopping-cart-white.svg" alt="in warenkorb" class="button-card-image">
+                                </button>
+                                <strong class="card-price-bold">19,99 €</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card wow fadeInUp" data-wow-delay="0.4s">
+                        <img src="img/california-roll.jpg" alt="image1" class="card-image">
+                        <div class="card-text">
+                            <div class="card-heading">
+                                <h3 class="card-title-restaurant">California Roll 6 Stk.</h3>
+                            </div>
+                            <div class="card-info">
+                                <div class="ingredients">Avocado, Gurke, Garnelen, Mayonnaise, Soya Souce, Reis.</div>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="button button-primery">
+                                    <span class="button-card-text">In Warenkorb</span>
+                                    <img src="img/shopping-cart-white.svg" alt="in warenkorb" class="button-card-image">
+                                </button>
+                                <strong class="card-price-bold">12,99 €</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card wow fadeInUp" data-wow-delay="0.6s">
+                        <img src="img/philadelphia-roll.jpg" alt="image1" class="card-image">
+                        <div class="card-text">
+                            <div class="card-heading">
+                                <h3 class="card-title-restaurant">Philadelphia Roll 6 Stk.</h3>
+                            </div>
+                            <div class="card-info">
+                                <div class="ingredients">Reis, Wasabi, Frischkäse, Lachs, Gurke, Avocado, Sesam.</div>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="button button-primery">
+                                    <span class="button-card-text">In Warenkorb</span>
+                                    <img src="img/shopping-cart-white.svg" alt="in warenkorb" class="button-card-image">
+                                </button>
+                                <strong class="card-price-bold">9,99 €</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="img/maguro.jpg" alt="image1" class="card-image">
+                        <div class="card-text">
+                            <div class="card-heading">
+                                <h3 class="card-title-restaurant">Maguro Roll 6 Stk.</h3>
+                            </div>
+                            <div class="card-info">
+                                <div class="ingredients">Reis, Thunfisch, Mu-Err-Pilze, Wasabi, Mayonnaise, Soya Souce.</div>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="button button-primery">
+                                    <span class="button-card-text">In Warenkorb</span>
+                                    <img src="img/shopping-cart-white.svg" alt="in warenkorb" class="button-card-image">
+                                </button>
+                                <strong class="card-price-bold">11,99 €</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card wow fadeInUp" data-wow-delay="0.4s">
+                        <img src="img/sushi-set-big.jpg" alt="image1" class="card-image">
+                        <div class="card-text">
+                            <div class="card-heading">
+                                <h3 class="card-title-restaurant">Grosse Sushi Set 50 Stk.</h3>
+                            </div>
+                            <div class="card-info">
+                                <div class="ingredients">Philadelphia Roll, Unagi Roll, Californi Roll, Dragon Sushi, Maki Sushi, Tempura Roll, Soya Souce.</div>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="button button-primery">
+                                    <span class="button-card-text">In Warenkorb</span>
+                                    <img src="img/shopping-cart-white.svg" alt="in warenkorb" class="button-card-image">
+                                </button>
+                                <strong class="card-price-bold">29,99 €</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card wow fadeInUp" data-wow-delay="0.6s">
+                        <img src="img/unagi-maki.jpg" alt="image1" class="card-image">
+                        <div class="card-text">
+                            <div class="card-heading">
+                                <h3 class="card-title-restaurant">Unagi Maki Sushi 6 Stk.</h3>
+                            </div>
+                            <div class="card-info">
+                                <div class="ingredients">Reis, Nori, Sesam, Unagi, Teriyaki, Wasabi, Soya Souce.</div>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="button button-primery">
+                                    <span class="button-card-text">In Warenkorb</span>
+                                    <img src="img/shopping-cart-white.svg" alt="in warenkorb" class="button-card-image">
+                                </button>
+                                <strong class="card-price-bold">9,99 €</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-block">
+                <img src="img/logo.svg" alt="" class="logo footer-logo">
+                <nav class="footer-nav">
+                    <a href="#" class="footer-link">Restaurants</a>
+                    <a href="#" class="footer-link">Karriere</a>
+                    <a href="#" class="footer-link">Presse</a>
+                    <a href="#" class="footer-link">Kontakte</a>
+                </nav>
+                <div class="social-links">
+                  <a href="#" class="social-link"><img src="img/instagram.svg" alt="instagram"> </a>
+                  <a href="#" class="social-link"><img src="img/facebook.svg" alt="facebook"> </a>
+                  <a href="#" class="social-link"><img src="img/vk.svg" alt="vk"> </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 class="modal-title">Корзина</h3>
+                <button class="close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="food-row">
+                    <span class="food-name">Kleine Sushi Set</span>
+                    <strong class="food-price">19,99 €</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">-</button>
+                        <span class="counter">1</span>
+                        <button class="counter-button">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">California Roll</span>
+                    <strong class="food-price">12,99 €</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">-</button>
+                        <span class="counter">1</span>
+                        <button class="counter-button">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Philadelphia Roll</span>
+                    <strong class="food-price">9,99 €</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">-</button>
+                        <span class="counter">1</span>
+                        <button class="counter-button">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Maguro Roll</span>
+                    <strong class="food-price">11,99 €</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">-</button>
+                        <span class="counter">1</span>
+                        <button class="counter-button">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Grosse Sushi Set</span>
+                    <strong class="food-price">29,99 €</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">-</button>
+                        <span class="counter">1</span>
+                        <button class="counter-button">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <span class="pricetag">84,95 €</span>
+                <div class="footer-buttons">
+                    <button class="button-order">Bestellen</button>
+                    <button class="button" id="button-cancel">Abbrechen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

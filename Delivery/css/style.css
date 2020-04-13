@@ -1,0 +1,548 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding-top: 44px;
+    font-family: 'Roboto', sans-serif; 
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+.header {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main {
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+}
+.promo {
+    box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+    background: #FFF1B8 url(../img/pizza.png) no-repeat top -100px right -250px / 800px;
+    border-radius: 10px;
+    padding: 68px 70px;
+    margin-bottom: 56px;
+}
+.input {
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px;
+}
+.input-adress {
+    flex: 0.8;   
+    font-size: 16px;
+    line-height: 24px;
+    background-image: url(../img/home.svg);
+    background-repeat: no-repeat;
+    background-position: left 11px center; 
+    padding-left: 35px;
+}
+.input-search {
+    background-image: url(../img/search.svg);
+    background-repeat: no-repeat;
+    background-position: left 11px center;
+    padding-left: 35px;
+    width: 300px;
+    margin-left: auto;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+}
+.button {
+    padding: 8px 16px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+    border-radius: 2px;
+    color: #595959;
+    font-size: 16px;
+    line-height: 24px;
+}
+.button-primery {
+    background: #1890FF;
+    border: 1px solid #1890FF;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+.button-order {
+    background: #1890FF;
+    border: 1px solid #1890FF;
+    color: #FFFFFF;
+    border-radius: 2px;
+    padding: 8px 16px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 10px;
+}
+.button-card-text {
+    margin-right: 10px;
+}
+.button-icon {
+    margin-right: 6px;
+    vertical-align: middle;
+}
+.button-text {
+    vertical-align: middle;
+}
+.promo-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #302C34;
+    max-width: 538px;
+}
+.promo-titel {
+    font-style: normal;
+font-weight: bold;
+font-size: 39px;
+line-height: 46px;
+
+color: #302C34;
+}
+.section-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 44px;
+}
+.section-title {
+    font-style: normal;
+    font-weight: bold;  
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    margin-right: 30px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.card-image {
+    width: 384px;
+    height: 250px;
+    object-fit: cover;
+}
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    flex-basis: 32%;
+    text-decoration: none;
+}
+.card-text {
+    padding-top: 20px;
+    padding-bottom: 35px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.card-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-title {
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+}
+.card-title-restaurant {
+    font-weight: 400px;
+}
+.ingredients {
+    color: #8C8C8C;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+.card-tag {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+    background: #262626;
+    border-radius: 2px;
+    padding: 1px 8px;
+}
+.card-price-bold {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    margin-left: 32px;
+}
+.card-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+.rating {
+    margin-right: 26px;
+    color: #FFC107;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+}
+.category {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 150px;
+}
+.price, .category {
+    color: #8C8C8C;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+}
+.price {
+    margin-right: 10px;
+}
+.price:after {
+    content:"";
+    width: 5px;
+    height: 5px;
+    background-color: #8C8C8C;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.district {
+    color: #8C8C8C;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    margin-left: 10px;
+}
+.delivery-time {
+    color: #302C34;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+
+}
+.footer {
+    padding: 60px 0;
+}
+.footer-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-nav {
+    margin-right: none;
+    margin-left: 45px;
+}
+.footer-link {
+    display: inline-block;
+    color: #595959;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+.footer-link:not(:last-child) {
+    margin-right: 15px;
+}
+.social-links {
+    display: flex;
+    align-items: center;
+}
+.social-link:not(:last-child) {
+    margin-right: 21px;
+}
+.modal {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+.is-open {
+    display: flex;
+}
+.modal-dialog {
+    max-width: 780px;
+    width: 95%;
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin: auto;
+    padding: 40px 45px;
+}
+.modal-title {
+    margin: 0px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+
+color: #000000;
+}
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+.food-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #D9D9D9;
+    margin-bottom: 15px;
+}
+.food-name {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #000000;
+}
+.food-price {
+    margin-left: auto;
+    margin-right: 47px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+}
+.food-counter {
+    display: flex;
+    align-items: center;
+}
+.pricetag {
+    background: #262626;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 20px;
+}
+.counter-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 39px;
+    height: 32px;
+    background: #FFFFFF;
+    border: 1px solid #40A9FF;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #40A9FF;
+}
+.counter {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.close {
+    font-size: 36px;
+    border: none;
+    background-color: transparent;
+}
+.modal-body {
+    margin-bottom: 30px;
+}
+.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-buttons {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1365px) {
+  .container {
+      max-width: 960px;
+  }
+  .promo {
+      background-size: 720px;
+  }
+  .category, .price, .district {
+      font-size: 14px;
+  }
+  .card .rating {
+      margin-right: 15px;
+  }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 700px;
+    }
+    .promo {
+        padding: 50px;
+        background-size: 500px;
+        background-position: center right -200px;
+    }
+    .promo-text {
+        font-size: 18px;
+        max-width: 400px;
+    }
+    .promo-titel {
+        font-size: 26px;
+    }
+    .card {
+        flex-basis: 49%;
+    }
+    .footer-link {
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
+    .header {
+        flex-wrap: wrap;
+    }
+    .input-adress {
+        order: 4;
+        margin-top: 15px;
+        flex: 1;
+    }
+    .card-title {
+        font-size: 18px;
+    }
+    .rating {
+        flex-basis: 100%;
+    }
+    .card-info {
+        flex-wrap: wrap;
+    }
+    .promo {
+        background-size: 400px;
+    }
+    .promo-titel {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+}
+@media (max-width: 568px) {
+    .container {
+        max-width: 90%;
+    }
+    .header {
+        flex-wrap: wrap;
+    }
+    .input-adress {
+        order: 4;
+        margin-top: 15px;
+        flex: 1;
+    }
+    .promo {
+        background-image: none;
+    }
+    .section-title {
+        font-size: 20px;
+    }
+    .card {
+        flex-basis: 100%;
+    }
+    .card-image {
+        width: 100%;
+    }
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer {
+        padding: 0px;
+    }
+}
+@media (max-width: 480px) {
+    .button-text {
+        display: none;
+    }
+    .promo {
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    .section-heading {
+        flex-wrap: wrap;
+    }
+    .footer-block {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-logo {
+        order: 0; 
+        margin-bottom: 20px;
+    }
+    .footer-nav {
+        margin-bottom: 20px;
+        align-items: center;
+    }   
+    .modal-dialog {
+        max-height: 600px;
+        max-width: 310px;
+    }
+    .modal-title {
+        font-size: 26px;
+    }
+    .modal-header {
+        margin-bottom: 15px;
+    }
+    .food-name {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+    .food-price {
+        font-size: 12px;
+        white-space: nowrap;
+        margin-right: 10px;
+    }
+    .food-counter { 
+    font-size: 12px;
+    }
+    .counter {
+        font-size: 12px;
+    }
+    .counter-button {
+        width: 29px;
+        height: 22px;
+    }
+    .food-row {
+        padding-bottom: 2px;
+        margin-bottom: 8px;
+    }
+    .pricetag {
+        padding: 8px 10px;
+        white-space: nowrap;
+        font-size: 13px;
+    }
+    .button {
+        font-size: 12px;
+        padding: 2px 10px;
+    }
+}
